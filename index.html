@@ -9,15 +9,32 @@
         <link rel="stylesheet" href="CSS/index.css" />
     </head>
     <body>
-        <form method="post" id="formConnexion">
+        <form method="post" id="formConnexion" action="connexion.php">
             <div class="connexion">
                 <table id="tabConnexion">
                     <tr>
-                        <th class="ui-widget-header">Identifiant</th>
+                        <th class="ui-widget-header"><label for="qui">Identifiant</label></th>
                         <td class="ui-widget-content">
-                            <select name="qui"></select>
+                            <select name="qui" id="qui">
+                                <option value="cecile">Cécile Martens</option>
+                                <option value="didier">Didier Develeer</option>
+                                <option value="nicolas">Nicolas Develeer</option>
+                                <option value="carolineP">Caroline Pirongs</option>
+                                <option value="abir">Abir Tiouri</option>
+                                <option value="melissa">Melissa</option>
+                                <option value="carolineV">Caroline Vansteenkiste</option>
+                                <option value="linda">Linda Tilkin</option>
+                                <option value="laetitia">Laetitia Marchand</option>
+                            </select>
                         </td>
                     </tr>
+                    <tr>
+                        <th><label for="mdp">Mot de passe</label></th>
+                        <td>
+                            <input type="password" id="mdp" name="mdp">
+                        </td>
+                    </tr>
+                    
                 </table>
             </div>
         </form>
