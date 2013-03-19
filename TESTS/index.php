@@ -1,21 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr">
-<head>
-	<style type="text/css">
-	body, html { height:100%; }
-	#page { height:100%; width:100%; display:table; background:red; }
-	.container { display:table-cell; vertical-align:middle; }
-	.content { background:green; }
-	</style>
- 
-</head>
- 
-<body>
-	<div id="page">
-		<div class="container">
-			<div class="content">
-				bla bla
-			</div>
-		</div>
-	</div>
-</body>
+<?php
+    require_once("../Classes/appelClasse.php")
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Connexion</title>
+    </head>
+    <body>
+        <?php
+
+            $bdd = new BDD("nicolas", "TheG@nts10032002");
+            
+            $q = $bdd->query("SELECT User FROM utilisateurs");
+            
+            while ($ligne = $q->fetch())
+            {
+                echo $ligne[0];
+            }
+        
+        ?>
+    </body>
+</html>

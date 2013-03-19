@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="CSS/index.css" />
     </head>
     <body>
-        <form method="post" id="formConnexion" action="connexion.php">
+        <form method="post" id="formConnexion">
             <div class="connexion">
                 <table id="tabConnexion">
                     <caption class="ui-widget-header">Connexion à EVA</caption>
@@ -26,6 +26,7 @@
                                 <option value="carolineV">Caroline Vansteenkiste</option>
                                 <option value="linda">Linda Tilkin</option>
                                 <option value="laetitia">Laetitia Marchand</option>
+                                <option value="etudiant">Etudiant</option>
                             </select>
                         </td>
                     </tr>
@@ -35,7 +36,14 @@
                             <input type="password" id="mdp" name="mdp">
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <td class="ui-widget-content">
+                            <button class="ui-button">Connexion</button>
+                        </td>
+                        <td class="ui-widget-content">
+                            <div id="infoConnexion"></div>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </form>
