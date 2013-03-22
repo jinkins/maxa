@@ -15,3 +15,8 @@ function connexion()
     }
     )
 }
+
+function reponse(reponse)
+{
+    $('#infoConnexion').html(reponse.find("texte").val());
+}

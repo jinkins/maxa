@@ -7,7 +7,8 @@ class User
             $id,
             $nom,
             $privilege,
-            $email;
+            $email, 
+            $bdd;
 
     public function __construct(array $donnees)
     {

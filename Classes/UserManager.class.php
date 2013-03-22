@@ -40,7 +40,9 @@ class UserManager
                             array(
                                 "Type" => "Normal",
                                 "Qui"  => $user->nom(),
-                                "Quoi" => "Connexion à la base de données"
+                                "Quoi" => "Connexion à la base de données",
+                                "IDObjet" => $user->id(),
+                                "Table" => "utilisateurs"
                     ));
 
             $logManager = new LogManager($this->db);
