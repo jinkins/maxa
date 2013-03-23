@@ -3,7 +3,7 @@ function connexion()
     $.ajax( 
     {
         type: "POST",
-        url: "connexion.php" ,
+        url: "../connexion.php" ,
         data : 
         "qui="+$("#qui").val()
         +"&mdp="+$("#mdp").val(),
@@ -18,5 +18,5 @@ function connexion()
 
 function reponse(reponse)
 {
-    $('#infoConnexion').html(reponse.find("texte").val());
+    $('#infoConnexion').html("test");
 }
